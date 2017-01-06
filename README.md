@@ -6,8 +6,9 @@ The latest performance results in CSV format are available in the **results/** f
 
 The [Jupyter notebook](results/analysis.ipynb) containing the analysis of the test results is also available in the **results/** folder.
 
-The correctly rendered version of the notebook is accessible at
-[here](http://nbviewer.jupyter.org/github/paulscherrerinstitute/hdf5_vds_performance_tests/blob/63da4d8995d63208dfef3f85fdbdd5280262ca65/results/analysis.ipynb) (unfortunately the graphs are not rendered correctly in the github.com preview)
+__Due to limited rendering only on github.ocm , the correctly rendered version of the notebook is accessible at
+[here](http://nbviewer.jupyter.org/github/paulscherrerinstitute/hdf5_vds_performance_tests/blob/63da4d8995d63208dfef3f85fdbdd5280262ca65/results/analysis.ipynb)__
+
 
 ## Compiling
 To compile the tests, first make sure that the **HDF_INSTALL** variable in the **Makefile** is set to your local HDF5 installation. After that you can compile the tests by running
