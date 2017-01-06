@@ -6,7 +6,7 @@ The latest performance results in CSV format are available in the **results/** f
 
 The [Jupyter notebook](results/analysis.ipynb) containing the analysis of the test results is also available in the **results/** folder.
 
-__Due to limited rendering only on github.ocm , the correctly rendered version of the notebook is accessible at
+__Due to limited rendering only on github.com , the correctly rendered version of the notebook is accessible at
 [here](http://nbviewer.jupyter.org/github/paulscherrerinstitute/hdf5_vds_performance_tests/blob/63da4d8995d63208dfef3f85fdbdd5280262ca65/results/analysis.ipynb)__
 
 
