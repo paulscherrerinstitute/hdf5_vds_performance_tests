@@ -1,0 +1,9 @@
+bin/
+*.o
+*.config
+*.creator
+*.creator.user
+*.files
+*.includes
+*.autosave
+temp/
