@@ -43,12 +43,13 @@ In order to perform the tests with the current input parameters, 128GB of free d
 The complete procedure to run all currently available tests is the following:
 
 ```
-make
-sh timeseries_runner.sh
-sh 2d_tile_runner.sh
-sh 3d_tile_runner.sh
-sh gigafrost_timeseries_runner.sh
-sh gigafrost_tile_runner.sh
+make;
+sh timeseries_runner.sh;
+sh 2d_tile_runner.sh;
+sh 3d_tile_runner.sh;
+sh gigafrost_timeseries_runner.sh;
+sh gigafrost_tile_runner.sh;
+sh prearranged_runner.sh;
 ```
 
 The results in CSV format will be saved into the **results/** folder.

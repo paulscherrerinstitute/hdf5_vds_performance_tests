@@ -6,7 +6,7 @@ INCLUDE = -I$(HDF_INSTALL)/include
 LIBSHDF = $(EXTLIB) -Wl,-R$(HDF_INSTALL)/lib -lhdf5 -lhdf5_hl
 
 CC      = gcc
-CFLAGS  = -O2 -std=c99
+CFLAGS  = -O3 -std=c99
 
 BIN_DIR = bin/
 

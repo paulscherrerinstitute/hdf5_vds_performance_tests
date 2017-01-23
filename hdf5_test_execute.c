@@ -1,5 +1,6 @@
 #include "hdf5_test_common.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, char *argv[]){
     struct TestInputParameters input_parameters;
@@ -17,9 +18,8 @@ int main(int argc, char *argv[]){
 
     // Measure the time needed to read from the separate files.
     struct timespec separate_start = timer_start();
-        for(int i=0; i<input_parameters.num_files; i++){
-            read_3d_dataset_file(filenames[i], input_parameters.source_dataset_size, source_buffer_size);
-        }
+        read_3d_dataset_file_from_multiple_sources(filenames, input_parameters.virtual_dataset_size, input_parameters.virtual_dataset_tiles_count,
+                                                   input_parameters.source_dataset_size, source_buffer_size);
     long separate_micro_seconds = timer_end(separate_start);
 
     hsize_t virtual_buffer_size[] = {input_parameters.buffer_z_size, input_parameters.virtual_dataset_size[1], input_parameters.virtual_dataset_size[2]};
@@ -27,6 +27,7 @@ int main(int argc, char *argv[]){
     // Measure the time needed to read the virtual dataset.
     struct timespec virtaul_start = timer_start();
         read_3d_dataset_file(input_parameters.virtual_dataset_filename, input_parameters.virtual_dataset_size, virtual_buffer_size);
+
     long virtual_micro_seconds = timer_end(virtaul_start);
 
 #if defined(DEBUG) || defined(HUMAN)

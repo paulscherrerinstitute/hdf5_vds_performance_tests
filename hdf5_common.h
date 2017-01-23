@@ -25,6 +25,9 @@ void generate_3d_virtual_dataset_file(const char* filename,
                                       int fill_value);
 
 // Read 3d dataset file.
+void read_3d_dataset_chunk(hid_t dataset_identifier, hid_t dataspace_identifier, hid_t memspace_identifier, int z_offset, hsize_t buffer_size[], int* read_buffer);
 void read_3d_dataset_file(const char* filename, hsize_t dataset_size[], hsize_t buffer_size[]);
+void read_3d_dataset_file_from_multiple_sources(char filenames[][path_buffer_size], hsize_t virtual_dataset_size[], hsize_t virtual_dataset_tiles_count[],
+                                                hsize_t source_dataset_size[], hsize_t buffer_size[]);
 
 #endif
