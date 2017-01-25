@@ -4,7 +4,11 @@ With this repo we are trying to evaluate the performance of the virtual dataset 
 ## Performance results
 The latest performance results in CSV format are available in the **results/** folder.
 
-The [Jupyter notebook](https://git.psi.ch/controls_highlevel_applications/hdf5_vds_performance_tests/blob/master/results/analysis.ipynb) containing the analysis of the test results is also available in the **results/** folder.
+The [Jupyter notebook](results/analysis.ipynb) containing the analysis of the test results is also available in the **results/** folder.
+
+__Due to limited rendering only on github.com , the correctly rendered version of the notebook is accessible at
+[here](http://nbviewer.jupyter.org/github/paulscherrerinstitute/hdf5_vds_performance_tests/blob/master/results/analysis.ipynb)__
+
 
 ## Compiling
 To compile the tests, first make sure that the **HDF_INSTALL** variable in the **Makefile** is set to your local HDF5 installation. After that you can compile the tests by running
